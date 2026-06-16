@@ -532,8 +532,12 @@ class _FormationPageState extends State<FormationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.team),
-        backgroundColor: Colors.green,
+        title: Text(
+          widget.team,
+          style: const TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.black,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Column(
         children: [
